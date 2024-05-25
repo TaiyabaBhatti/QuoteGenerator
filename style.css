@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --white-font:white;
+    --max-width:100% ;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+   background-color: black;
+   font-family: sans-serif;
+}
+
+#container{
+    padding-inline: 3rem;
+    margin: auto;
+    width: 50rem;
+}
+
+#content, #quote-block{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#content{
+    width: 80%;
+    margin: auto;
+    gap: 1.8rem;
+  
+}
+
+#generate, #generate button, #quote-block,#author{
+    width: 100%;
+}
+
+#generate button{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    padding-block: 1rem;
+    appearance: none;
+    background-color: transparent;
+    border: 0.2rem solid var(--white-font);
+    color: var(--white-font);
+    
+}
+
+#generate button:hover{
+    transition: background-color 1s linear;
+    -webkit-transition: background-color 1s linera;
+    -moz-transition: background-color 1s linera;
+    -ms-transition: background-color 1s linera;
+    -o-transition: background-color 1s linera;
+    background-color: var(--white-font);
+    cursor: pointer;
+    color: black;
+}
+
+
+
+#quote-block{
+    width: 100%;
+    padding: 1rem;
+    border: 0.5rem solid;
+    border-image: linear-gradient(45deg, purple,orange);
+    border-image-slice:1;
+}
+#quote{
+    width: fit-content;
+    font-size: 1.5rem;
+    color: var(--white-font);
+    text-align: center;
+    line-height: 1.9rem;
+  
+}
+
+
+#author{
+    font-size: 1.1rem;
+    text-align: end;
+    color: gray;
+
+}
+#heading{
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: var(--white-font);
+    background-image: linear-gradient(to right,#f35626, #feab3a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:color 10s linear infinite ;
+    -webkit-animation:color 10s linear infinite ;
+}
+
+
+@keyframes color {
+
+    /* 0%{
+        color: purple;
+        text-shadow: 0px 0px 2px purple;
+
+    }
+    
+    25%{
+        color:orangered;
+        text-shadow: 0px 0px 2px purple;
+    }
+    45%{
+        color: green;
+        text-shadow: 0px 0px 2px purple;
+    }
+    75%{
+        color: pink;
+        text-shadow: 0px 0px 2px purple;
+    }
+    100%{
+        color: rgb(7, 60, 158);
+        
+    }  */
+    
+    from{
+-webkit-filter: hue-rotate(0deg);
+    }
+
+    to{
+        -webkit-filter: hue-rotate(-360deg);
+    }
+
+
+
+}
+    
+
+
+
+
+
+
+
+
