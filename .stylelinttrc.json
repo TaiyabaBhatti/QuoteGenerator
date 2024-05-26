@@ -3,6 +3,8 @@
 
         "alpha-value-notation": "number", 
         "selector-type-case": "lower", 
-        "color-no-hex": true 
+        "color-no-hex": true ,
+        "block-no-empty":true 
+
 } 
 } 
